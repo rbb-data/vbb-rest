@@ -7,7 +7,7 @@
 - Use the [`1.bvg.transport.rest`](https://1.bvg.transport.rest/) endpoint. It returns data from the BVG HAFAS API, which is almost exactly the same. Check the docs at [`derhuerst/bvg-rest`](https://github.com/derhuerst/bvg-rest/blob/master/readme.md)!
 - Host your `vbb-rest` instance. See below for instructions.
 
-![vbb-rest architecture diagram](https://rawgit.com/derhuerst/vbb-rest/master/architecture.svg)
+![vbb-rest architecture diagram](architecture.svg)
 
 [![Docker build status](https://img.shields.io/docker/build/derhuerst/vbb-rest.svg)](https://hub.docker.com/r/derhuerst/vbb-rest/)
 [![dependency status](https://img.shields.io/david/derhuerst/vbb-rest.svg)](https://david-dm.org/derhuerst/vbb-rest)
