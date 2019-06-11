@@ -1,11 +1,13 @@
 # vbb-rest
 
-***vbb-rest* is a public transport REST API**, a clean alternative to the [VBB HAFAS API](https://github.com/derhuerst/vbb-hafas). [It has lots of advantages over theirs.](docs/why.md)
+***vbb-rest* is a public transport REST API**, a clean alternative to the [VBB HAFAS API](https://github.com/derhuerst/vbb-hafas).
 
-~~Use [`vbb-client@3`](https://github.com/derhuerst/vbb-client) for querying this API in browsers or with Node.~~ VBB has blocked our API servers' IP addresses, so **[the public `2.vbb.transport.rest` endpoint](https://2.vbb.transport.rest/) [is down](https://status.transport.rest/779961406)**. For the time being, you have two choices:
+~~Use [`vbb-client@4`](https://github.com/derhuerst/vbb-client) for querying this API in browsers or with Node.~~ VBB has blocked our API servers' IP addresses, so **[the public `3.vbb.transport.rest` endpoint](https://3.vbb.transport.rest/) [is down](https://status.transport.rest/782652589)**. For the time being, you have two choices:
 
-- Use the [`1.bvg.transport.rest`](https://1.bvg.transport.rest/) endpoint. It returns data from the BVG HAFAS API, which is almost exactly the same. Check the docs at [`derhuerst/bvg-rest`](https://github.com/derhuerst/bvg-rest/blob/master/readme.md)!
+- **Use the [`2.bvg.transport.rest`](https://2.bvg.transport.rest/) endpoint.** It returns data from the BVG HAFAS API, which is almost exactly the same. Check the docs at [`derhuerst/bvg-rest#2`](https://github.com/derhuerst/bvg-rest/blob/2/readme.md)!
 - Host your `vbb-rest` instance. See below for instructions.
+
+[API Documentation](docs/index.md) | [Why?](docs/why.md)
 
 ![vbb-rest architecture diagram](architecture.svg)
 
@@ -30,7 +32,7 @@ docker run -d -p 3000:3000 derhuerst/vbb-rest
 ```shell
 git clone https://github.com/derhuerst/vbb-rest.git
 cd vbb-rest
-git checkout 2
+git checkout 3
 npm install --production
 npm start
 ```
